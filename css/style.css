@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+:root {
+/* colors */
+--color-primary: #08A6E4;
+--color-primary-shadow: rgba(7, 172, 230, .16);
+--color-redish: #FB3B64;
+--color-green: #55DFB4;
+--color-black: #000000;
+--color-grey: #A5A5A5;
+--color-light-grey: #F7F7F7;
+--color-white: #FFFFFF;
+/* fonts */
+--primary-font: 'Raleway', sans-serif;
+--secondary:font: 'Open Sans', sans-serif;
+/* font weight */
+--font-light: 300;
+--font-regular: 400;
+--font-bold: 700;
+--font-extra-bold: 800;
+/* font size */
+--font-smallest: 1.1rem;
+--font-small: 1.2rem;
+--font-button: 1.3rem;
+--font-data: 1.4rem;
+--font-text: 1.6rem;
+--font-description: 1.7rem;
+--font-numbers: 2rem;
+--font-logo-small: 2.6rem;
+--font-logo-big: 3.2rem;
+--font-medium-header: 3.6rem;
+--font-big-header: 4.6rem;
+--font-biggest-header: 4.9rem;
+/*  box shadow*/
+--shadow-buttons: 5px 10px 14px #07ACE629;
+--shadow-header: 0px 3px 6px #00000029;
+--shadow-footer: 0px -5px 40px #00000029;
+/*  */
+
+
+
+}
