@@ -153,3 +153,82 @@ a {
     border-radius: 40px;
     padding: 22px 157px;
 }
+
+/* Statictics */
+
+.statistics {
+    height: 525px;
+}
+
+.statistics__header {
+    font-family: var(--primary-font);
+    font-size: var(--font-medium-header);
+    padding-top: 100px;
+    text-align: center;
+}
+
+.statistics__wrapper {
+    justify-content: space-evenly;
+    align-items: center;
+    height: 389px;   
+}
+
+.statistics__article {
+    text-align: center;
+    position: relative;
+}
+
+.article__photo--person {
+    width: 44px;
+    height: 52px;
+}
+
+.article__photo--eye {
+    width: 65px;
+    height: 36px;
+}
+
+.article__photo--catalog {
+    width: 52px;
+    height: 48px;
+}
+
+.article__circle {
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    z-index: -1;
+}
+
+.article__circle--red {
+    background-color: var(--color-redish);
+    top: -5px;
+    left: 30px;
+}
+
+.article__circle--blue {
+    background-color: var(--color-primary);
+    top: -15px;
+    left: 45px;
+}
+
+.article__circle--green {
+    background-color: var(--color-green);
+    top: -5px;
+    left: 10px;
+}
+
+.statistics__article--header {
+    letter-spacing: 6px;
+    font-family: var(--primary-font);
+    font-weight: var(--font-extra-bold);
+    font-size: var(--font-numbers);
+    padding: 20px;
+}
+
+.statistics__article--text {
+    font-family: var(--primary-font);
+    font-size: var(--font-description);
+    color: var(--color-grey);
+}
