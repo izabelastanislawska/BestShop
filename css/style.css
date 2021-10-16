@@ -60,7 +60,7 @@ a {
 
 /* Navigation */
 
-.nav {
+.nav{
     width: 100%;
     box-shadow: var(--shadow-header);
 }
@@ -85,10 +85,6 @@ a {
 
 .nav__logo--link {
     font-size: var(--font-logo-big);
-}
-
-.footer__logo--link {
-    font-size: var(--font-logo-small);
 }
 
 .nav__list {
@@ -645,6 +641,33 @@ input[type="checkbox"]:checked ~ .contact__checkmark{
     height: 57px;
     border: none;
     color: var(--color-white);
-    margin-top: 20px;
+    margin: 20px 0 50px 0;
     align-self: flex-end;
+}
+
+.footer {
+    width: 100%;
+    box-shadow: var(--shadow-footer);
+    padding: 20px
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo--link {
+    font-size: var(--font-logo-small);
+    padding: 20px 0;
+}
+
+.footer__text {
+    font-family: var(--secondary-font);
+    font-size: var(--font-smallest);
+    color: var(--color-grey);
+    padding-top: 10px;
+}
+
+.twitter-icon {
+    padding: 10px;
 }
