@@ -1,0 +1,32 @@
+.banner {
+	background-image: url(../assets/Background.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 91vh;
+    &__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 30%;
+    }
+    &__header {
+	    font-family: $primary-font;
+	    font-size: $font-biggest-header;
+	    padding-top: 6rem;
+    }
+    &__text {
+        padding: 3rem 0;
+    }
+    &__link {
+        font-weight: $font-bold;
+        background-color: $color-primary;
+        border-radius: 4rem;
+        padding: 2.2rem 15rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner {
+        background-size: 200%;
+    }
+}

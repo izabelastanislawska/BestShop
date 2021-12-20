@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	font-size: 10px;
+	width: 100%;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: $color-white;
+}
+
+.wrapper {
+	display: flex;
+}
+
+.logo-link {
+	color: $color-primary;
+	font-family: $primary-font;
+	font-weight: $font-light;
+}
+
+.header {
+	font-family: $primary-font;
+	font-size: $font-medium-header;
+}
+
+.text-font {
+	font-family: $secondary-font;
+	font-size: $font-text;
+}
+

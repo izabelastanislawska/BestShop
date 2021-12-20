@@ -1,0 +1,136 @@
+.pricing {
+	&__header {
+		text-align: center;
+		padding: 10rem 0 5rem 0;
+	}
+	&__wrapper {
+		justify-content: space-evenly;
+		align-items: center;
+		gap: 1rem;
+	}
+	&__article {
+		text-align: center;
+		width: 25%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		&-header {
+			font-family: $primary-font;
+			font-size: $font-numbers;
+			font-weight: $font-bold;
+			padding-top: 3.4rem;
+			padding-bottom: 1.4rem;
+			&-highlighted {
+				font-size: $font-highlighted;
+				margin: 1rem 0 1rem 0;
+			}
+		}
+		&-red {
+			border: 1px solid $color-redish;
+			border-radius: 1.8rem;
+		}
+		&-green {
+			border: 1px solid $color-green;
+			border-radius: 1.8rem;
+		}
+		&-highlighted {
+			width: 30%;
+			border: 1px solid $color-primary;
+			box-shadow: $shadow-highlighted;
+			border-radius: 1.8rem;
+			margin: 1rem 0 1rem 0;
+			padding: 1rem 0 1rem 0;
+		}
+		&-price {
+			font-family: $secondary-font;
+			font-weight: $font-light;
+			font-size: $font-big-header;
+		}
+		&-note {
+			font-family: $primary-font;
+			font-size: $font-small;
+			font-weight: $font-bold;
+			padding: 1.5rem;
+			margin-bottom: 5rem;
+		}
+		&-list {
+			padding-bottom: 8.1rem;
+			&-item {
+				font-family: $secondary-font;
+				font-size: $font-data;
+				padding: 1rem;
+			}
+		}
+		&-link {
+			font-family: $secondary-font;
+			font-weight: $font-bold;
+			padding: 2rem 6rem;
+			border-radius: 2.3rem;
+			position: absolute;
+			bottom: -10%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+.price-red {
+	color: $color-redish;
+}
+.price-blue {
+	color: $color-primary;
+}
+.price-green {
+	color: $color-green;
+}
+.checkmark {
+	&::before {
+		content: url(../assets/Ckechmark-2.svg);
+		padding: 1rem;
+	}
+}
+.close {
+	&::before {
+		content: url(../assets/Close.svg);
+		padding: 1rem;
+	}
+}
+.button-red {
+	background-color: $color-redish;
+}
+.button-blue {
+	background-color: $color-primary;
+}
+.botton-green {
+	background-color: $color-green;
+}
+
+@media (max-width: 800px) {
+	.pricing {
+		&__header {
+			padding-top: 5rem;
+		}
+		&__wrapper {
+			flex-direction: column;
+		}
+		&__article {
+			width: 80%;
+			margin-bottom: 5rem;
+			flex-direction: row;
+			justify-content: space-around;
+			&-price {
+				padding: 1rem;
+			}
+			&-list {
+				padding: 3rem 0;
+			}
+			&-link {
+				bottom: -20%;
+			}
+			&-highlighted {
+				width: 90%;
+			}
+		}
+	}	
+}

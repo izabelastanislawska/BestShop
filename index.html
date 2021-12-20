@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>BestShop</title>
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
@@ -14,78 +13,90 @@
 <body>
     <header class="nav">
         <div class="container wrapper">
-                <div class="nav__logo">
-                    <a href="#" class="nav__logo--link logo--link">BestShop</a>
-                </div>
+            <div class="nav__logo">
+                <a href="#" class="nav__logo-link logo-link">BestShop</a>
+            </div>
+            <label for="hamburger" class="toggle">
+                <input type="checkbox" id="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
                 <ul class="nav__list">
-                    <li class="nav__list--item"><a href="#" class="nav__list--link">Why us</a></li>
-                    <li class="nav__list--item"><a href="#" class="nav__list--link">Benefits</a></li>
-                    <li class="nav__list--item"><a href="#" class="nav__list--link">Prices</a></li>
-                    <li class="nav__list--item"><a href="#" class="nav__list--link">Contact</a></li>
-                </ul>  
+                    <li class="nav__list-item"><a href="#" class="nav__list-link">Why us</a></li>
+                    <li class="nav__list-item"><a href="#" class="nav__list-link">Benefits</a></li>
+                    <li class="nav__list-item"><a href="#" class="nav__list-link">Prices</a></li>
+                    <li class="nav__list-item"><a href="#" class="nav__list-link">Contact</a></li>
+                </ul> 
+            </label> 
         </div>
     </header>
     <main>
+        
         <section class="banner">
             <div class="container wrapper banner__wrapper">
-                    <h1 class="banner__header">Sell More!</h1>
-                    <p class="banner__text text--font">Open show on our platform andincrease your sales</p>
-                    <a href="#" class="banner__link text--font">Open your shop</a>   
+                <h1 class="banner__header">Sell More!</h1>
+                <p class="banner__text text-font">Open show on our platform andincrease your sales</p>
+                <a href="#" class="banner__link text-font">Open your shop</a>   
             </div>
         </section>
         <section class="statistics container">
-                <h2 class="statistics__header header">The most popular sales platform in country</h2>
-                <div class="wrapper statistics__wrapper">    
-                    <article class="statistics__article">
-                        <img src="assets/Person.svg" alt="Person Icon" class="article__photo--person">
-                        <span class="article__circle article__circle--red"></span>
-                        <h3 class="statistics__article--header">100000+</h3>
-                        <p class="statistics__article--text">daily entries</p>
-                    </article>
-                    <article class="statistics__article">
-                        <img src="assets/Eye.svg" alt="Eye Icon" class="article__photo--eye">
-                        <span class="article__circle article__circle--blue"></span>
-                        <h3 class="statistics__article--header">2000000+</h3>
-                        <p class="statistics__article--text">seen products every day</p>
-                    </article>
-                    <article class="statistics__article">
-                        <img src="assets/Catalog.svg" alt="Catalog Icon" class="article__photo--catalog">
-                        <span class="article__circle article__circle--green"></span>
-                        <h3 class="statistics__article--header">10000+</h3>
-                        <p class="statistics__article--text">added posts daily</p>
-                    </article>
-                </div>
+            <h2 class="statistics__header header">The most popular sales platform in country</h2>
+            <div class="wrapper statistics__wrapper">    
+                <article class="statistics__article">
+                    <img src="assets/Person.svg" alt="Person Icon" class="article__photo-person">
+                    <span class="article__circle article__circle-red"></span>
+                    <h3 class="statistics__article-header">100000+</h3>
+                    <p class="statistics__article-text">daily entries</p>
+                </article>
+                <article class="statistics__article">
+                    <img src="assets/Eye.svg" alt="Eye Icon" class="article__photo-eye">
+                    <span class="article__circle article__circle-blue"></span>
+                    <h3 class="statistics__article-header">2000000+</h3>
+                    <p class="statistics__article-text">seen products every day</p>
+                </article>
+                <article class="statistics__article">
+                    <img src="assets/Catalog.svg" alt="Catalog Icon" class="article__photo-catalog">
+                    <span class="article__circle article__circle-green"></span>
+                    <h3 class="statistics__article-header">10000+</h3>
+                    <p class="statistics__article-text">added posts daily</p>
+                </article>
+            </div>
         </section>
         <section class="benefits">
             <div class="container wrapper benefits__wrapper">
-                <article class="benefits__article benefits__article--first">
-                    <div class="benefits__article--section">
-                        <h2 class="header benefits__article--header-first">Be always first</h2>
-                        <p class="text--font benefits__article--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <article class="benefits__article benefits__article-first">
+                    <div class="benefits__article-section">
+                        <h2 class="header benefits__article-header-first">Be always first</h2>
+                        <p class="text-font benefits__article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
-                    <div class="benefits__article--photo">
-                        <img src="assets/Macbook.png" alt="Macbook" class="article--photo-first">
-                        <span class="article--photo-first-object"></span>
+                    <div class="benefits__article-photo">
+                        
+                        <img src="assets/Macbook.png" alt="Macbook" class="article__photo-first">
+                        <span class="article__photo-first-object"></span>
+                        
                     </div>
                 </article>
+
                 <article class="benefits__article">
-                    <div class="benefits__article--section article--section-order">
-                        <h2 class="header benefits__article--header-second">Your shop is where you are!</h2>
-                        <p class="text--font benefits__article--text-second">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <div class="benefits__article-section article-section-order">
+                        <h2 class="header benefits__article-header-second">Your shop is where you are!</h2>
+                        <p class="text-font benefits__article-text-second">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>    
-                    <div class="benefits__article--photo">
-                        <img src="assets/iPhone.png" alt="iPhone" class="article__photo--second">
-                        <span class="second-article__object"></span>
+                    <div class="benefits__article-photo">
+                        <img src="assets/iPhone.png" alt="iPhone" class="article__photo-second">
+                        <span class="article__photo-second-object"></span>
                     </div>    
                 </article>
-                <div class="wrapper  benefits__last-article--wrapper">
-                    <article class="benefits__article--third benefits__article">
-                        <h2 class="header benefits__article--header-third">Increase recognition your brand!</h2>
-                        <p class="text--font benefits__article--text benefits__article--text-third">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                <div class="wrapper  benefits__article-third-wrapper">
+                    <article class="benefits__article-third benefits__article">
+                        <h2 class="header benefits__article-header-third">Increase recognition your brand!</h2>
+                        <p class="text-font benefits__article-text benefits__article-text-third">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </article>
-                    <div class="article__photo--wrapper">
-                        <img src="assets/Trumpet.png" alt="Trumpet" class="article__photo--third">
-                        <span class="third-article__object"></span>
+                    <div class="article__photo-wrapper">
+                        <div class="article__photo-third-object">
+                            <img src="assets/Trumpet.png" alt="Trumpet" class="article__photo-third">
+                        </div>
                     </div>
                 </div>    
             </div>
@@ -93,65 +104,66 @@
         <section class="container">
             <h2 class="header pricing__header">Pricing</h2>
             <div class="wrapper pricing__wrapper">
-                <article class="pricing__article article-red">
+                <article class="pricing__article pricing__article-red">
                     <div>
-                        <h3 class="pricing__article--header">Basic</h3>
-                        <span class="pricing__article--price price-red">$0</span>
+                        <h3 class="pricing__article-header">Basic</h3>
+                        <span class="pricing__article-price price-red">$0</span>
+                        <p class="pricing__article-note"></p>
                     </div>
-                    <ul class="pricing__article--list">
-                        <li class="pricing__article--list-item checkmark">100 MB HDD</li>
-                        <li class="pricing__article--list-item checkmark">1 Subdomain</li>
-                        <li class="pricing__article--list-item checkmark">2 E-mails</li>
-                        <li class="pricing__article--list-item close">Two years license</li>
-                        <li class="pricing__article--list-item close">Full support</li>
+                    <ul class="pricing__article-list">
+                        <li class="pricing__article-list-item checkmark">100 MB HDD</li>
+                        <li class="pricing__article-list-item checkmark">1 Subdomain</li>
+                        <li class="pricing__article-list-item checkmark">2 E-mails</li>
+                        <li class="pricing__article-list-item close">Two years license</li>
+                        <li class="pricing__article-list-item close">Full support</li>
                     </ul>
-                    <a class="pricing__article--link button-red" href="#">Begin</a>
+                    <a class="pricing__article-link button-red" href="#">Begin</a>
                 </article>
-                <article class="pricing__article highlighted__article">
+                <article class="pricing__article pricing__article-highlighted">
                     <div>
-                        <h3 class="pricing__article--header highlighted-header">Proffesional</h3>
-                        <span class="pricing__article--price price-blue">$25</span>
-                        <p class="pricing__article--note">Limited offer</p>
+                        <h3 class="pricing__article-header pricing__article-header-highlighted">Proffesional</h3>
+                        <span class="pricing__article-price price-blue">$25</span>
+                        <p class="pricing__article-note">Limited offer</p>
                     </div>
-                    <ul class="pricing__article--list">
-                        <li class="pricing__article--list-item checkmark">500 MB HDD</li>
-                        <li class="pricing__article--list-item checkmark">2 Subdomains</li>
-                        <li class="pricing__article--list-item checkmark">5 E-mails</li>
-                        <li class="pricing__article--list-item checkmark">One year license</li>
-                        <li class="pricing__article--list-item close">Full support</li>
+                    <ul class="pricing__article-list">
+                        <li class="pricing__article-list-item checkmark">500 MB HDD</li>
+                        <li class="pricing__article-list-item checkmark">2 Subdomains</li>
+                        <li class="pricing__article-list-item checkmark">5 E-mails</li>
+                        <li class="pricing__article-list-item checkmark">One year license</li>
+                        <li class="pricing__article-list-item close">Full support</li>
                     </ul>
-                    <a class="pricing__article--link button-blue" href="#">Begin</a>
+                    <a class="pricing__article-link button-blue" href="#">Begin</a>
                 </article>
-                <article class="pricing__article article-green">
+                <article class="pricing__article pricing__article-green">
                     <div>
-                        <h3 class="pricing__article--header">Premium</h3>
-                        <span class="pricing__article--price price-green">$60</span>
-                        <p class="pricing__article--note">Limited offer</p>
+                        <h3 class="pricing__article-header">Premium</h3>
+                        <span class="pricing__article-price price-green">$60</span>
+                        <p class="pricing__article-note">Limited offer</p>
                     </div>
-                    <ul class="pricing__article--list">
-                        <li class="pricing__article--list-item checkmark">2 GB HDD</li>
-                        <li class="pricing__article--list-item checkmark">5 Subdomains</li>
-                        <li class="pricing__article--list-item checkmark">20 E-mails</li>
-                        <li class="pricing__article--list-item checkmark">Two years license</li>
-                        <li class="pricing__article--list-item checkmark">Full support</li>
+                    <ul class="pricing__article-list">
+                        <li class="pricing__article-list-item checkmark">2 GB HDD</li>
+                        <li class="pricing__article-list-item checkmark">5 Subdomains</li>
+                        <li class="pricing__article-list-item checkmark">20 E-mails</li>
+                        <li class="pricing__article-list-item checkmark">Two years license</li>
+                        <li class="pricing__article-list-item checkmark">Full support</li>
                     </ul>
-                    <a class="pricing__article--link botton-green" href="#">Begin</a>
+                    <a class="pricing__article-link botton-green" href="#">Begin</a>
                 </article>
             </div>
         </section>
         <section class="container wrapper contact">
-            <div class="contact__section--left">
+            <div class="contact__section-left">
                 <h1 class="contact__header">Any questions?</h1>
-                <p class="content__text">Leave your email address or call us!</p>
+                <p class="contact__text">Leave your email address or call us!</p>
                 <p class="contact__info mail">info@bestshop.xyz</p>
                 <p class="contact__info phone">123 456 789</p>
             </div>
-            <form class="contact__section--right">
-                <label for="name" class="contact__section--right-label">Name</label>
-                <input type="text" id="name" class="contact__section--right-input"> 
-                <label for="email" class="contact__section--right-label email-padding">Email</label>
-                <input type="email" id="email" class="contact__section--right-input">    
-                <label for="checkbox" class="contact__checkbox--wrapper">
+            <form class="contact__section-right">
+                <label for="name" class="contact__section-right-label">Name</label>
+                <input type="text" id="name" class="contact__section-right-input"> 
+                <label for="email" class="contact__section-right-label email-padding">Email</label>
+                <input type="email" id="email" class="contact__section-right-input">    
+                <label for="checkbox" class="contact__checkbox-wrapper">
                     <input type="checkbox" id="checkbox">
                     <span class="contact__checkmark"></span>
                     <p class="contact__checkbox-text">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
@@ -163,7 +175,7 @@
     <footer class="footer">
         <div class="container footer__wrapper">
             <div>
-                <a href="#" class="footer__logo--link logo--link">BestShop</a>
+                <a href="#" class="footer__logo-link logo-link">BestShop</a>
                 <p class="footer__text">© 2019 BestShop LTD, All Rights Reserved</p>
             </div>
             <div>

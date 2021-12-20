@@ -1,0 +1,148 @@
+.contact {
+	margin-top: 15.5rem;
+	width: 60%;
+	&__section {
+		&-left {
+			width: 50%;
+			margin-right: 1rem;
+		}
+		&-right {
+			width: 50%;
+			margin-left: 1rem;
+			display: flex;
+			flex-direction: column;
+			&-label {
+				letter-spacing: 0.3rem;
+				color: $color-primary;
+				font-family: $secondary-font;
+				font-size: $font-smallest;
+				font-weight: $font-bold;
+				text-transform: uppercase;
+				padding-bottom: 3rem;
+			}
+			&-input {
+				border: none;
+				border-bottom: 1px solid $color-grey;
+				font-size: 2rem;
+			}
+		}
+	}
+	&__header {
+		font-family: $primary-font;
+		font-size: $font-biggest-header;
+		padding-bottom: 2.2rem;
+	}
+	&__text {
+		font-family: $secondary-font;
+		font-size: $font-text;
+		padding-bottom: 4.2rem;
+	}
+	&__info {
+		color: $color-grey;
+		font-family: $secondary-font;
+		font-size: $font-text;
+		font-weight: $font-bold;
+		display: inline-block;
+		padding: 1rem 4rem 1rem 0;
+		position: relative;
+		margin-left: 4rem;
+	}
+	&__checkbox {
+		&-wrapper {
+			display: flex;
+			padding-top: 2rem;
+			position: relative;
+		}
+	}
+	&__checkmark {
+		position: absolute;
+		width: 2.4rem;
+		height: 2.4rem;
+		border: 1px solid $color-grey;
+		border-radius: 0.4rem;
+		left: 0;
+		top: 2rem;
+		cursor: pointer;
+	}
+	&__button {
+		font-family: $secondary-font;
+		font-size: $font-button;
+		font-weight: $font-bold;
+		border-radius: 3.5rem;
+		box-shadow: $shadow-buttons;
+		background-color: $color-primary;
+		padding: 2rem 10rem;
+		border: none;
+		color: $color-white;
+		margin: 2rem 0 5rem 0;
+		align-self: flex-end;
+	}
+	&-text {
+		font-family: $secondary-font;
+		font-size: $font-small;
+		color: $color-dark-grey;
+		padding-left: 3.5rem;
+	}
+}
+.phone {
+	&::before {
+		content: url(../assets/Phone\ Icon.svg);
+		width: 2.7rem;
+		height: 2.7rem;
+		position: absolute;
+		top: 0;
+		left: -4rem;
+	}
+}
+.mail {
+	&::before {
+		content: url(../assets/Mail\ Icon.svg);
+		width: 2.7rem;
+		height: 2.7rem;
+		position: absolute;
+		top: 0;
+		left: -4rem;
+	}
+}
+.email-padding {
+	padding: 3rem 0;
+}
+input[type="checkbox"] {
+	display: none;
+	&:checked {
+		~ {
+			.contact__checkmark {
+				background-image: url(../assets/Checkmark.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		}
+	}
+}
+
+@media (min-width: 1006px) and (max-width: 1250px) {
+	.contact {
+		width: 70%;
+	}
+}
+
+@media (min-width: 701px) and (max-width: 1005px) {
+	.contact {
+		width: 80%;
+	}
+}
+
+@media (max-width: 700px) {
+	.contact {
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		&__section-right {
+			margin-top: 5rem;
+			width: 100%;
+		}
+		&__section-left {
+			width: 100%;
+		}
+	}
+}

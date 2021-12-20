@@ -1,0 +1,261 @@
+.benefits {
+	background-color: $color-light-grey;
+	padding-bottom: 10rem;
+	
+    &__wrapper {
+	    flex-direction: column;
+	    gap: 4rem;
+		width: 80%;
+    }
+    &__article {
+        border: 1px solid #E8E9ED;
+        border-radius: 0.5rem;
+        background-color: $color-white;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+		&-first {
+			margin-top: 10.5rem;
+		}
+		&-third {
+			flex-direction: column;
+			width: 60%;
+			&-wrapper {
+				gap: 5%;
+				width: 90%;
+				margin: auto;
+			}
+		}
+		&-section {
+			width: 50%;
+    	}
+		&-photo {
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		&-header {
+			&-first {
+				padding: 9.1rem 0 0 3.6rem;
+			}
+			&-second {
+				padding: 7rem 17rem 0 0;
+			}
+			&-third {
+				padding: 7rem 20rem 0 3.5rem;
+				text-align: left;
+			}
+		}
+		&-text {
+			padding: 3rem 0 14rem 3.6rem;
+			position: relative;
+			width: 80%;
+			&::after {
+				content: "";
+				border-bottom: 0.4rem solid $color-redish;
+				width: 80%;
+				position: absolute;
+				bottom: 9rem;
+				left: 4rem;
+			}
+			&-second {
+				padding: 3rem 2rem 12rem 0;
+				position: relative;
+				&::after {
+					content: "";
+					border-bottom: 0.4rem solid $color-primary;
+					width: 80%;
+					position: absolute;
+					bottom: 7rem;
+					left: 0;
+				}
+			}
+			&-third {
+				&::after {
+					content: "";
+					border-bottom: 0.4rem solid $color-green;
+					width: 80%;
+					position: absolute;
+					bottom: 9rem;
+					left: 4rem;
+				}
+			}
+		}
+	}
+}
+
+.article {
+	&__photo {
+		&-first {
+			z-index: 1;
+			width: 40rem;
+			&-object {
+				width: 18rem;
+				height: 18rem;
+				background-color: $color-redish;
+				border-radius: 4.1rem;
+				position: absolute;
+				transform: rotate(45deg);
+				top: 10%;
+				right: 15%;
+			}
+		}
+		&-second {
+			width: 40rem;
+			z-index: 1;
+			margin: auto;
+			&-object {
+				width: 30rem;
+				height: 30rem;
+				background-color: $color-primary;
+				border-radius: 50%;
+				position: absolute;
+				top: 5%;
+				left: 20%;
+			}
+		}
+		&-third {
+			width: 30rem;
+			z-index: 1;
+			&-object {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: $color-green;
+				border-radius: 0.5rem;
+			}
+		}
+		&-wrapper {
+			width: 35%;
+		}
+	}
+	&-section-order {
+		order: 1;
+		margin-left: 10rem;
+	}
+}
+
+@media (min-width: 1006px) and (max-width: 1250px) {
+	.benefits {
+		&__wrapper {
+			width: 100%;
+		}
+		&__last-article-wrapper {
+			width: 90%;
+		}
+	}
+}
+
+@media (max-width: 1005px) {
+	.benefits {
+		&__wrapper {
+			width: 90%;	
+		}
+		&__article {
+			flex-direction: column;
+			align-items: center;
+			&-photo{
+				order: -1;
+				padding-top: 5rem;
+				&-first-object {
+					right: -5%;
+				}
+			}
+			&-section {
+				width: 90%;
+			}
+			&-third {
+				width: 100%;
+				&-wrapper {
+					width: 90%;
+					display: flex;
+					flex-direction: column;
+				}
+			}
+			&-text {
+				align-self: flex-start;
+				padding-left: 0;
+				padding-bottom: 5rem;
+				&-second {
+					padding-bottom: 5rem;
+					&::after {
+						display: none;
+					}
+				}
+				&-third {
+					padding-left: 3rem;
+				}
+				&::after {
+					display: none;
+				}
+			}
+			&-header-first {
+				padding-left: 0rem;
+			}
+			&-header {
+				&-first, &-second, &-third {
+					padding-top: 3rem;
+				}
+			}
+		}
+	}
+
+	.article {
+		&__photo {
+			&-second-object {
+				top: 10%;
+				left: -10%;
+			}
+			&-wrapper {
+				width: 100%;
+			}
+			&-third {
+				margin-top: 5rem;
+			}
+		}
+		&-section-order {
+			margin-left: 1rem;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.benefits {
+		&__article {
+			&-header {
+				&-first {
+					padding-left: 0rem;
+					padding-top: 3rem;
+				}
+				&-second {
+					padding-top: 3rem;
+				}
+				&-third {
+					padding-left: 3rem;
+					padding-right: 0;
+					padding-top: 3rem;
+				}
+			}
+			&__photo {
+				&-second-object {
+					left: -20%;
+					top: 10%;
+				}
+				&-first-object {
+					right: -20%;
+				}
+			}
+			&-text {
+				padding-left: 0;
+				&-third {
+					padding-left: 3rem;
+				}
+			}
+		}
+	}
+}

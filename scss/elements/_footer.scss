@@ -1,0 +1,22 @@
+.footer {
+	width: 100%;
+	box-shadow: $shadow-footer;
+	padding: 2rem;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__logo-link {
+		font-size: $font-logo-small;
+		padding: 2rem 0;
+	}
+	&__text {
+		font-family: $secondary-font;
+		font-size: $font-smallest;
+		color: $color-grey;
+		padding-top: 1rem;
+	}
+}
+.twitter-icon {
+	padding: 1rem;
+}
