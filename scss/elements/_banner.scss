@@ -16,6 +16,7 @@
     }
     &__text {
         padding: 3rem 0;
+        text-align: center;
     }
     &__link {
         font-weight: $font-bold;
@@ -28,5 +29,8 @@
 @media (max-width: 800px) {
     .banner {
         background-size: 200%;
+        &__link {
+            padding: 2.2rem 7rem;
+        }
     }
 }

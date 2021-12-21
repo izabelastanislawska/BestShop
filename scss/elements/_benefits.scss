@@ -36,6 +36,28 @@
 			justify-content: center;
 			align-items: center;
 			position: relative;
+			padding: 6rem;
+			&-first::before {
+				content: "";
+				width: 18rem;
+				height: 18rem;
+				background-color: $color-redish;
+				border-radius: 4.1rem;
+				position: absolute;
+				transform: rotate(45deg);
+				top: 10%;
+				right: 10%;
+			}
+			&-second::before {
+				content: "";
+				width: 32rem;
+				height: 32rem;
+				background-color: $color-primary;
+				border-radius: 50%;
+				position: absolute;
+				top: 10%;
+				left: 20%;
+			}
 		}
 		&-header {
 			&-first {
@@ -86,40 +108,23 @@
 		}
 	}
 }
-
 .article {
 	&__photo {
 		&-first {
 			z-index: 1;
-			width: 40rem;
-			&-object {
-				width: 18rem;
-				height: 18rem;
-				background-color: $color-redish;
-				border-radius: 4.1rem;
-				position: absolute;
-				transform: rotate(45deg);
-				top: 10%;
-				right: 15%;
-			}
+			width: 37rem;
+			height: 22rem;
 		}
 		&-second {
-			width: 40rem;
+			width: 43rem;
+			height: 33rem;
 			z-index: 1;
 			margin: auto;
-			&-object {
-				width: 30rem;
-				height: 30rem;
-				background-color: $color-primary;
-				border-radius: 50%;
-				position: absolute;
-				top: 5%;
-				left: 20%;
-			}
 		}
 		&-third {
-			width: 30rem;
+			width: 100%;
 			z-index: 1;
+			padding: 3rem;
 			&-object {
 				width: 100%;
 				height: 100%;
@@ -161,10 +166,17 @@
 			align-items: center;
 			&-photo{
 				order: -1;
-				padding-top: 5rem;
-				&-first-object {
-					right: -5%;
-				}
+				padding: 3rem 0 0;
+				&-first::before {
+						width: 9rem;
+						height: 9rem;
+						top: 5%;
+						right: 25%;
+					}
+				&-second::before {
+						width: 13rem;
+						height: 13rem;
+					}
 			}
 			&-section {
 				width: 90%;
@@ -207,9 +219,13 @@
 
 	.article {
 		&__photo {
-			&-second-object {
-				top: 10%;
-				left: -10%;
+			&-first {
+				width: 19rem;
+				height: 11rem;
+			}
+			&-second {
+				width: 18rem;
+				height: 14rem;
 			}
 			&-wrapper {
 				width: 100%;
@@ -224,30 +240,22 @@
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) {	
 	.benefits {
 		&__article {
 			&-header {
 				&-first {
 					padding-left: 0rem;
-					padding-top: 3rem;
+					padding-top: 1rem;
 				}
 				&-second {
 					padding-top: 3rem;
+					padding-right: 1rem;
 				}
 				&-third {
 					padding-left: 3rem;
 					padding-right: 0;
 					padding-top: 3rem;
-				}
-			}
-			&__photo {
-				&-second-object {
-					left: -20%;
-					top: 10%;
-				}
-				&-first-object {
-					right: -20%;
 				}
 			}
 			&-text {

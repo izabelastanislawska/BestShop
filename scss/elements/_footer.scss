@@ -5,6 +5,7 @@
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
+		gap: 1rem;
 	}
 	&__logo-link {
 		font-size: $font-logo-small;
@@ -16,7 +17,4 @@
 		color: $color-grey;
 		padding-top: 1rem;
 	}
-}
-.twitter-icon {
-	padding: 1rem;
 }

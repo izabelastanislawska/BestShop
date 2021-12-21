@@ -53,6 +53,12 @@
 			padding-top: 2rem;
 			position: relative;
 		}
+		&-text {
+			font-family: $secondary-font;
+			font-size: $font-small;
+			color: $color-dark-grey;
+			padding-left: 3.5rem;
+		}
 	}
 	&__checkmark {
 		position: absolute;
@@ -77,12 +83,7 @@
 		margin: 2rem 0 5rem 0;
 		align-self: flex-end;
 	}
-	&-text {
-		font-family: $secondary-font;
-		font-size: $font-small;
-		color: $color-dark-grey;
-		padding-left: 3.5rem;
-	}
+	
 }
 .phone {
 	&::before {

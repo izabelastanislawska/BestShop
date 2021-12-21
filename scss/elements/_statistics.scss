@@ -60,12 +60,12 @@
         &-green {
             background-color: $color-green;
             top: -0.5rem;
-            left: 1rem;
+            left: 2rem;
         }
     }
 }    
 
-@media (min-width: 801px) and (max-width: 1005px) {
+@media (min-width: 701px) and (max-width: 1005px) {
 	.statistics__wrapper {
         padding: 12rem 1rem;
     }
