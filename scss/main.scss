@@ -1,4 +1,5 @@
 @import "generic/reset";
+@import "elements/mixins";
 
 @import "utilities/fonts";
 @import "utilities/colors";
@@ -10,5 +11,6 @@
 @import "elements/statistics";
 @import "elements/benefits";
 @import "elements/pricing";
+@import "elements/calculator";
 @import "elements/contact";
 @import "elements/footer";
